@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+
+
+
+body {
+  background-image: url("anime.png");
+  background-repeat:no-repeat;
+  background-size: 900px;
+}
+
+
+.button{
+font-size:22px;
+text-align: center;
+background-color:red;
+width: 100px;
+cursor:pointer;
+text-decoration:dashed;
+transition: 2s;
+}
+
+.button:hover{
+ 
+  background-color:black;
+  color:white;
+  font-size:30px;
+  transition:3s;
+  text-decoration: dotted;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display:flex;
+  justify-content: space-between;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 5s;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  transition:10s;
+
+}
+
+li .dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;
+transition: 5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 10s;
+}
+
+.linkstyle:hover{
+
+  transition:2s;
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+    <li><a href="form.html">HOME</a></li>
+    <li> <a href="about.html">ABOUT</a></li>
+    <li> <a href="weofnowfuwoufw">NEWS </a></li>
+    <li> <a href="weofnowfuwoufw">CONTACT</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" style="font-size:22px" class="dropbtn" >Dropdown</a>
+        <div class="dropdown-content">
+            <a href="nav.html" class="linkstyle">Link 1</a>
+            <a href="about.html" linkstyle>Link 2</a>
+            <a href="index.html" class="linkstyle">Link 3</a>
+        </div>
+    </li>
+  </li>
+</ul>
+
+
+
+  </style>
+
+  
+    <label for="First name" style="font-size:30px">First Name:</label><br>
+    <input type="text"name="fname" placeholder="First Name"><br>
+    <label for="Last name" style="font-size:30px">Last Name:</label><br>
+    <input type="text" name="lname" placeholder="Last Name"><br>
+    <label for="Email" style="font-size:30px">Email:</label><br>
+    <input type="text" placeholder="Email"><br>
+    <label for="password" style="font-size:30px">password:</label><br>
+    <input type="password" placeholder="passsword"><br>
+    <label for="Phone Number" style="font-size:30px">Phone Number:</label><br>
+    <input type="number" placeholder="Phone Number"><br><br>
+    
+
+    <button class="button"><a href="about.html">Submit</a></button>
+
+
+
+</body>
+</html>
